@@ -29,7 +29,7 @@ const ThoughtController = {
             .then(dbThoughtData => res.json(dbThoughtData));
     },
     updateThought({ params, body }, res) {
-        User.findOneAndUpdate(
+        Thought.findOneAndUpdate(
             { _id: params.thoughtId },
             body,
             { new: true, runValidators: true })
