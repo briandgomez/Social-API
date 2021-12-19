@@ -12,7 +12,7 @@ const ThoughtController = {
             })
             .then(dbThoughtData => {
                 if (!dbThoughtData) {
-                    re.status(404).json({ message: 'No User found with this id!' });
+                    re.status(404).json({ message: 'No Thought found with this id!' });
                     return;
                 }
                 res.json(dbThoughtData);
@@ -35,7 +35,31 @@ const ThoughtController = {
             { new: true, runValidators: true })
             .then(dbThoughtData => {
                 if (!dbThoughtData) {
-                    res.status(400).json({ message: 'No User found with this id!' });
+                    res.status(400).json({ message: 'No Thought found with this id!' });
+                    return;
+                }
+                res.json(dbThoughtData);
+            })
+            .catch(err => res.status(400).json(err))
+    },
+    deleteThought({ params}, res) {
+        Thought.findOneAndDelete(
+            { _id: params.thoughtId })
+            .then(dbThoughtData => {
+                if (!dbThoughtData) {
+                    res.status(400).json({ message: 'No Thought found with this id!' });
+                    return;
+                }
+                res.json(dbThoughtData);
+            })
+            .catch(err => res.status(400).json(err))
+    },
+    getThoughtById({ params}, res) {
+        Thought.findOneAndDelete(
+            { _id: params.thoughtId })
+            .then(dbThoughtData => {
+                if (!dbThoughtData) {
+                    res.status(400).json({ message: 'No Thought found with this id!' });
                     return;
                 }
                 res.json(dbThoughtData);
