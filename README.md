@@ -12,6 +12,9 @@ This project involves creating the back end for a social network application. Mo
 4. Run `npm start` to run the server
 5. Use Insomnia Core or your browser to test the REST API
 
+## Request Example
+<img width="955" alt="social-api" src="https://user-images.githubusercontent.com/69539559/147025590-7d7367dc-1a84-452c-9d26-1062134177d4.png">
+
 ## Tools
 This project was created using the following:
 * MongoDB
@@ -22,7 +25,7 @@ This project was created using the following:
 * Node.js
 * Insomnia
 
-## Link
+## Walkthrough
 Walkthrough Part 1: https://watch.screencastify.com/v/66uOcuwXyZzFlDMNqHzz
 <br>
 Walkthrough Part 2: https://watch.screencastify.com/v/aX1jEVUaNMs6nP3005oJ
