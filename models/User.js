@@ -35,7 +35,7 @@ const UserSchema = new Schema(
         id: false
     }
 );
-
+//Keeps track of 'firends' for this user
 UserSchema.virtual('friendCount').get(function () {
     return this.friends.length;
 });

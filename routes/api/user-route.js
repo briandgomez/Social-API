@@ -20,7 +20,9 @@ router
 // api/users/:userId/friends/
 router
 .route('/:userId/friends/:friendId')
+// api/users/:ID of current user/friends/:ID of the person the current user wants to ADD as a a friend
 .post(addFriend)
+// api/users/:ID of current user/friends/:ID of the person the current user wants to REMOVE as a a friend
 .delete(deleteFriend);
 
 module.exports = router;
