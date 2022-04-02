@@ -23,7 +23,7 @@ This project was created using the following:
 * IndexedDB
 * Express.js
 * Node.js
-* Insomnia
+* Insomnia Core
 
 ## Walkthrough
 Walkthrough Part 1: https://watch.screencastify.com/v/66uOcuwXyZzFlDMNqHzz
