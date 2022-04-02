@@ -17,6 +17,7 @@ router
 // api/thoughts/:thoughtId
 router
     .route('/:thoughtId')
+    // api/thoughts/:ID of thought that shoud be updated
     .put(updateThought)
     .delete(deleteThought)
     .get(getThoughtById);
